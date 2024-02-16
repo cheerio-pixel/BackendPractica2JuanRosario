@@ -62,7 +62,6 @@ namespace backend.Repositories
             List<ProductStatus> list = JsonSerializer.Deserialize<List<ProductStatus>>(File.ReadAllText(file))
                                        ?? throw new JsonException($"Archivo con valor null '{file}' cuando no se esperaba ");
             List<TipoProducto> productoTipos = Enum.GetValues<TipoProducto>().Where(tp => tp != TipoProducto.Base).ToList();
-            Console.WriteLine(list.All(p => productoTipos.Contains(p.Tipo)));
             if (productoTipos.Count != list.Count
                 || !productoTipos.All(list.Select(p => p.Tipo).Contains))
             {

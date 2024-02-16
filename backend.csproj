@@ -8,7 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCoreAnalyzers" Version="0.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <SourceFiles Include="Resources/MockData/*.json" />
+    <OutputDir Include="../res" />
+    <OutputDirFiles Include="../res/*.json" />
+  </ItemGroup>
+
+  <Target Name="EnsureDestinationDirectory" BeforeTargets="Build">
+    <MakeDir Directories="@(OutputDir)" Condition="!Exists(@(OutputDir))" />
+  </Target>
+
+  <Target Name="CopyFiles" AfterTargets="Build">
+    <Copy SourceFiles="@(SourceFiles)" DestinationFolder="@(OutputDir)" Condition="!Exists(@(OutputDirFiles))" />
+  </Target>
+
 
 </Project>

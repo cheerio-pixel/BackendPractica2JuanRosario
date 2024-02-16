@@ -1,0 +1,29 @@
+[{
+  "Id": "9cfbc914-3903-4d32-8346-4786314f4e07",
+  "FirstName": "Janaye",
+  "LastName": "Kunkel",
+  "Email": "jkunkel0@github.com",
+  "Password": "kO9k5QiBy&)",
+  "Role": "Gerente"
+}, {
+  "Id": "945983da-c4bd-4951-8069-6e7546e23754",
+  "FirstName": "Wallache",
+  "LastName": "Sales",
+  "Email": "wsales1@altervista.org",
+  "Password": "kE0gXJwu",
+  "Role": "Agente De Servicios"
+}, {
+  "Id": "f95fd4bd-dfb2-4b16-81bd-a2647a0397c3",
+  "FirstName": "Burk",
+  "LastName": "Menchenton",
+  "Email": "bmenchenton2@storify.com",
+  "Password": "lH4skf7X3",
+  "Role": "Agente De Servicios"
+}, {
+  "Id": "b633f398-79dc-4f7b-9be0-0c392aeaf850",
+  "FirstName": "Karyl",
+  "LastName": "Jasiak",
+  "Email": "kjasiak3@chronoengine.com",
+  "Password": "yY7V9AOl!Tu<&!",
+  "Role": "Gerente"
+}]
